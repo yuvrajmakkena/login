@@ -50,13 +50,9 @@ router.post("/signup", (req, res) => {
 });
 
 router.get('/dashboard', function (req, res, next) {
-    var db = mongoose.connect('mongodb://localhost/myApp');
-    var UserSchema = new mongoose.schema({name:String,password:String});
-    let userModel = db.model('UserList', UserSchema);
-    var userCount = userModel.count('name');
-    res.render("dashboard", {
-        count
-    });
+   User.count({},function( err, count){
+   res.render("dashboard",{count});
+   });
 });
 
 
