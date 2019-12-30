@@ -18,7 +18,7 @@ const indexRoute = require("./routes/index");
 
 
 //this is used to run on local server ie., localhost
-let url = process.env.DATABASEURL || "mongodb+srv://yuvraj:<Dh61ww@mlab>@cluster0-jdt7y.mongodb.net/test?retryWrites=true&w=majority";
+let url = process.env.DATABASEURL || "mongodb+srv://test:test@cluster0-fcy65.mongodb.net/test?retryWrites=true&w=majority";
 mongoose.connect(url, { useNewUrlParser: true });
 
 
