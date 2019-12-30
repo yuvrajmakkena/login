@@ -1,3 +1,3 @@
 # sample
 
-Contains File structure and basic predefined code 
+Contains File structure and basic predefined code. 
